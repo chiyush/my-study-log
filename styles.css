@@ -169,7 +169,7 @@ select {
 }
 
 textarea {
-  min-height: 138px;
+  min-height: 88px;
   resize: vertical;
   padding: 12px;
   line-height: 1.7;
@@ -324,7 +324,7 @@ textarea:focus {
 }
 
 .rhythm-chart {
-  min-height: 180px;
+  min-height: 150px;
   overflow: hidden;
   border: 1px solid rgba(229, 221, 208, 0.86);
   border-radius: 8px;
@@ -336,7 +336,7 @@ textarea:focus {
 .rhythm-svg {
   display: block;
   width: 100%;
-  height: 180px;
+  height: 150px;
 }
 
 .rhythm-grid line {
@@ -514,7 +514,7 @@ textarea:focus {
 @media (max-width: 560px) {
   .editor-panel,
   .history-panel {
-    padding: 18px;
+    padding: 14px;
   }
 
   .brand-row,
@@ -522,6 +522,45 @@ textarea:focus {
   .list-tools {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .brand-row,
+  .history-header {
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .diary-form {
+    gap: 9px;
+  }
+
+  textarea {
+    min-height: 72px;
+  }
+
+  .biorhythm {
+    gap: 6px;
+    margin-bottom: 12px;
+    padding: 10px;
+  }
+
+  .rhythm-chart,
+  .rhythm-svg {
+    min-height: 112px;
+    height: 112px;
+  }
+
+  .biorhythm-detail {
+    font-size: 0.76rem;
+  }
+
+  .entry-card {
+    gap: 8px;
+    padding: 12px;
   }
 
   .save-state,
